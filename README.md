@@ -12,7 +12,7 @@ This repository is linked to the **publication "LangChain for LLM Application De
 📦 What's Inside     
 - _Customized Code Examples:_ Original examples from the course have been reviewed, refined, and personalized for improved clarity and usability, helping you better understand LangChain's capabilities.  
 
-- _Real-World Application:_ The case study revolves around analyzing a dataset of customer reviews on various products. We’ll demonstrate how LangChain can power a Customer Review Assistant that:  
+- _Real-World Application:_ The case study revolves around analyzing a dataset [Amazon Reviews Multi](https://www.kaggle.com/datasets/mexwell/amazon-reviews-multi) of customer reviews on various products. We’ll demonstrate how LangChain can power a Customer Review Assistant that:  
   - Understands customer feedback     
   - Translates it for broader accessibility    
   - Summarizes key points for quick reference    
