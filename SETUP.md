@@ -52,7 +52,7 @@ OPENAI_API_KEY=your_openai_api_key
 LANGSMITH_API_KEY=your_langsmith_api_key
 TAVILY_API_KEY=your_tavily_api_key
 
-## How to Get Your Own OpenAI API Key 
+
 
 ## How to Get the Multilingual Amazon Reviews Corpus (MARC) dataset
 
