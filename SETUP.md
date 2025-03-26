@@ -55,7 +55,7 @@ TAVILY_API_KEY=your_tavily_api_key
 
 ## How to Get the Multilingual Amazon Reviews Corpus (MARC) dataset
 
-More information about the dataset on [Amazon Reviews Multi](https://www.kaggle.com/datasets/mexwell/amazon-reviews-multi)
+More information about the dataset on [Amazon Reviews Multi](https://www.kaggle.com/datasets/mexwell/amazon-reviews-multi) and on the pubblication of [Phillip Keung, Yichao Lu, György Szarvas and Noah A. Smith. “The Multilingual Amazon Reviews Corpus.” In Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing, 2020](https://aclanthology.org/2020.emnlp-main.369/)
 
 For the purpose of this project, the test.csv file has been chosen and resized.
 ```` python
