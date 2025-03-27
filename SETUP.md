@@ -144,4 +144,4 @@ sampled_data = sampled_data.sort_values(by=['language', 'stars'])
 print(sampled_data)
 
 # Save the resized dataset to a CSV file
-sampled_data.to_csv("Resized_dataset.csv", index=False)
+sampled_data.to_csv("Resized_Amazon_Reviews_Multi_Dataset.csv", index=False)
