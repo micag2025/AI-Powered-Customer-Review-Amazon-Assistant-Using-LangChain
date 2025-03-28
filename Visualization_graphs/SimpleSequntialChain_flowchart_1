@@ -1,0 +1,26 @@
+digraph {
+	A [label="Retrieve review data
+from DataFrame (row 11)"]
+	B [label="Prompt1: Generate summarization prompt
+(ChatPromptTemplate)"]
+	C [label="Prompt2: Generate sentiment prompt
+(ChatPromptTemplate)"]
+	D [label="Initialize LLM "]
+	E [label="Chain1: Summarization LLMChain"]
+	F [label="Chain2: Sentiment Analysis LLMChain"]
+	G [label="Create sequential chain
+(Chain1 -> Chain2)"]
+	H [label="Run the chain
+invoke(review_data)"]
+	I [label="Print the response"]
+	A -> B
+	A -> C
+	B -> E
+	C -> F
+	D -> E
+	D -> F
+	E -> G
+	F -> G
+	G -> H
+	H -> I
+}
