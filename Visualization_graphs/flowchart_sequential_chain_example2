@@ -1,0 +1,28 @@
+digraph SequentialChainDiagram {
+	input [label="Input:
+review_title + review_body" shape=ellipse]
+	prompt1 [label="Prompt 1:
+Summarize Review" shape=note]
+	prompt2 [label="Prompt 2:
+Sentiment Analysis" shape=note]
+	prompt3 [label="Prompt 3:
+Predict Star Rating" shape=note]
+	chain1 [label="🔗 LLMChain 1:
+Summarization
+→ Output: summary"]
+	chain2 [label="🔗 LLMChain 2:
+Sentiment Analysis
+→ Output: sentiment"]
+	chain3 [label="🔗 LLMChain 3:
+Rating Prediction
+→ Output: predicted_stars"]
+	output [label="Final Output:
+summary, sentiment, predicted_stars" shape=ellipse]
+	input -> prompt1
+	prompt1 -> chain1
+	chain1 -> prompt2 [label=summary]
+	prompt2 -> chain2
+	chain2 -> prompt3 [label=sentiment]
+	prompt3 -> chain3
+	chain3 -> output
+}

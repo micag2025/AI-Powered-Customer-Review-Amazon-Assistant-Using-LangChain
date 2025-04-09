@@ -1,0 +1,18 @@
+digraph ReviewAssistant_Router_BW {
+	A [label="Input: review_body" shape=ellipse]
+	B [label="🔗 LLMChain: Extract Summary
+Output: summary" shape=box]
+	C [label="RouterChain: Sentiment-Based Routing" shape=diamond]
+	D1 [label="🔗 LLMChain: 😊 Generate Response (Positive)" shape=box]
+	D2 [label="🔗 LLMChain: 😐 Generate Response (Neutral)" shape=box]
+	D3 [label="🔗 LLMChain: 😞 Generate Response (Negative)" shape=box]
+	E [label="Final Output: Tailored Response" shape=ellipse]
+	A -> B
+	B -> C [label=summary]
+	C -> D1 [label="if positive"]
+	C -> D2 [label="if neutral"]
+	C -> D3 [label="if negative"]
+	D1 -> E
+	D2 -> E
+	D3 -> E
+}

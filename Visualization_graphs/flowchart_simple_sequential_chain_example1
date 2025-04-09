@@ -1,0 +1,13 @@
+digraph SimpleSequentialChain {
+	A [label="User Input (Review)"]
+	B [label="Prompt 1: Extract Key Points"]
+	C [label="🔗 LLMChain 1 (Key Points)"]
+	D [label="Prompt 2: Summarize Key Points"]
+	E [label="🔗 LLMChain 2 (Detailed Summary)"]
+	F [label="Final Output: Detailed Summary Explanation"]
+	A -> B [label="Input: {review_body}"]
+	B -> C [label="Pass to LLM"]
+	C -> D [label="Generated: {input}"]
+	D -> E [label="Pass to LLM"]
+	E -> F [label="Generated: Detailed Explanation"]
+}

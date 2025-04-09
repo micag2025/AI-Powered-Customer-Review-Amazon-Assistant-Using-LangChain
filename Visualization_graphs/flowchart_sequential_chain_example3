@@ -1,0 +1,12 @@
+digraph NLP_Pipeline {
+	B [label="Filter Reviews by Category"]
+	D [label="🔗 Summarize Reviews (LLMChain)"]
+	E [label="🔗 Perform Sentiment Analysis (LLMChain)"]
+	F [label="🔗 Extract Key Themes (LLMChain)"]
+	G [label="Final Output: Summary, Sentiment, Themes" shape=ellipse]
+	B -> D
+	D -> E
+	D -> F
+	E -> G
+	F -> G
+}
